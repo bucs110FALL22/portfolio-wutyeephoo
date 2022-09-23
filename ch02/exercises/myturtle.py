@@ -1,5 +1,6 @@
 import turtle
 
+window = turtle.Screen()
 my_turtle = turtle.Turtle()
 
 num_sides = int(input("Please enter the number of sides: "))
