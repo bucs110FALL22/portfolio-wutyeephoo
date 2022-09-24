@@ -43,44 +43,9 @@ window = pygame.display.set_mode()
 
 coords = []
 
-num_sides = 3
-side_length = 50
-offset = 100
-window.fill("white")
-
-for i in range(num_sides):
-  theta = ((2.0 * math.pi * i) / num_sides)
-  x = side_length * math.cos(theta) + offset
-  y = side_length * math.sin(theta) + offset
-  coords += [[x,y]]
-
-pygame.draw.polygon(window, "green", coords) 
-
-pygame.display.flip()
-pygame.time.wait(5000)
-
-window.fill("white")
-pygame.display.flip()
-
-num_sides = 4
-coords = []
-
-for i in range(num_sides):
-  theta = ((2.0 * math.pi * i) / num_sides)
-  x = side_length * math.cos(theta) + offset
-  y = side_length * math.sin(theta) + offset
-  coords += [[x,y]]
-
-pygame.draw.polygon(window, "green", coords) 
-
-pygame.display.flip()
-pygame.time.wait(5000)
-
-window.fill("white")
-pygame.display.flip()
-
-num_sides = 6
-coords = []
+num_sides = int(input("Please enter the number of sides: "))
+side_length = int(input("Please enter the length of each side: "))
+offset = int(input("Please enter the offset location from the top left corner: "))
 
 for i in range(num_sides):
   theta = ((2.0 * math.pi * i) / num_sides)
@@ -93,39 +58,3 @@ pygame.draw.polygon(window, "green", coords)
 pygame.display.flip()
 pygame.time.wait(10000)
 
-window.fill("white")
-pygame.display.flip()
-
-num_sides = 9
-coords = []
-
-for i in range(num_sides):
-  theta = ((2.0 * math.pi * i) / num_sides)
-  x = side_length * math.cos(theta) + offset
-  y = side_length * math.sin(theta) + offset
-  coords += [[x,y]]
-
-pygame.draw.polygon(window, "green", coords) 
-
-pygame.display.flip()
-pygame.time.wait(10000)
-
-window.fill("white")
-pygame.display.flip()
-
-num_sides = 360
-coords = []
-
-for i in range(num_sides):
-  theta = ((2.0 * math.pi * i) / num_sides)
-  x = side_length * math.cos(theta) + offset
-  y = side_length * math.sin(theta) + offset
-  coords += [[x,y]]
-
-pygame.draw.polygon(window, "green", coords) 
-
-pygame.display.flip()
-pygame.time.wait(10000)
-
-window.fill("white")
-pygame.display.flip()
