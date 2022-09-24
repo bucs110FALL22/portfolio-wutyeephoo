@@ -3,7 +3,7 @@ import turtle
 window = turtle.Screen()
 my_turtle = turtle.Turtle()
 
-num_sides = int(input("Please enter the number of sides: "))
+num_sides = int(input("Please enter the number of sides for the shape: "))
 my_turtle.color("purple")
 length = 50
 angle = 360 / num_sides
