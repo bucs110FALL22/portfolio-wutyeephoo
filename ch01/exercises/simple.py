@@ -13,7 +13,7 @@ print(10 / 15)
 rate = input("Enter the current exchange rate for Euro to Dollar: ")
 rate = float(rate)
 
-amount = input("Enter the amount of currency to exchange: ")
+amount = input("Enter the amount of currency you wish to exchange: ")
 amount = float(amount)
 
 total = rate * amount
