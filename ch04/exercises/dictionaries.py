@@ -12,8 +12,8 @@ substitutions = {
   "Representative":"unmagical wizard",
   "secretary":"eating champion",
   "leaders":"goblins",
-  "washington":"Mount Doom",
-  "president":"you know, the guy"
+  "Washington":"Mount Doom",
+  "President":"you know, the guy"
   }
 
 for key, value in substitutions.items():
