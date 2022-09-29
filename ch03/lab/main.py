@@ -53,7 +53,7 @@ for i in range(num_sides):
   y = side_length * math.sin(theta) + offset
   coords += [[x,y]]
 
-pygame.draw.polygon(window, "green", coords) 
+pygame.draw.polygon(window, "blue", coords) 
 
 pygame.display.flip()
 pygame.time.wait(10000)
