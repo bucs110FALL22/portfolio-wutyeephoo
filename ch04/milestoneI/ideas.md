@@ -18,12 +18,12 @@ For each one below you should have a basic description of a program idea, a coup
 
 ## Project Idea 1
 
-< add your idea here >
+We will make a platform game similar to Mario.
 
 ## Project Idea 2
 
-< add your idea here >
+We will set it up so that there can be multiple players.
 
 ## Project Idea 3
 
-< add your idea here >
+We will hopefully make more complex character visuals.
