@@ -1,27 +1,37 @@
 import turtle
 import random
 
-window.bgcolor('lightblue')
+def isinscreen(window, turt):
+  turtleX = turt.xcor()
+  turtleY = turt.ycor()
 
-pygame.init()
-window = pygame.display.set_mode()
+  x_range = window.window_width()/2
+  y_range = window.window_height()/2
+  if abs(turtleX) > x_range or abs(turtleY) > y_range:
+    return False
+  return True
 
 window = turtle.Screen()
 my_turtle = turtle.Turtle()
-my_turtle.goto(100, 50)
+my_turtle.shape('turtle')
+my_turtle.speed(0)
 
-coin = ["head","tail"]
-chance = random.choice(coin)
+distance = 10
+angle = 90
+is_in_screen = True
 
-coords = []
-offset = 100
-x, y = my_turtle.pos()
-while abs(x) < window.window_width/2:
-  if chance == "head":
-    my_turtle.left(90)
-    my_turtle.forward(50)
-  elif chance == "tail":
-    my_turtle.left(90)
-    my_turtle.forward(50)
+colors = ["green", "blue", "purple"]
 
+while isinscreen(window, my_turtle):
+  coin = random.randrange(0, 2)
+  if coin:
+    my_turtle.right(angle)
+  else:
+    my_turtle.left(angle)
+  my_turtle.forward(distance)
+  my_turtle.color(colors[0])
+
+  colors.append(colors.pop(0))
+
+window.bgcolor("blue")
 window.exitonclick()
