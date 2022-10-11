@@ -2,7 +2,7 @@ def star_pyramid():
   rows = int(input("Enter the number of rows: "))
   count = 0
   while count <= rows:
-	  print('*'*rows)
+    print('*'*count)
     count += 1
 star_pyramid()
 
