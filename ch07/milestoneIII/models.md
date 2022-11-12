@@ -38,3 +38,15 @@ Using the example below, list each model class and its interface
   def collide()
     if P1posx >= posx or P1posx <= posx or P1posy >= posy or P1posy <= posy:
       points += 1
+
+Class Enemy
+def __init__(self, P1posx, P1posy, P1width, P1height):
+    self.x = P1posx
+    self.y = P1posy
+    self.width = P1widt
+    self.height = P1height
+    self.color = color
+
+def collide()
+  if P1posx >= posx or P1posx <= posx or P1posy >= posy or P1posy <= posy:
+    points -= 1
