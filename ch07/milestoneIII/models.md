@@ -27,7 +27,14 @@ Remember, this is to get you thinking and help me guide you. Nothing is set in s
 
 Using the example below, list each model class and its interface
 
-1. < Class Name > 
-    * __init__
-        * < description >
-    * < additional methods >
+1. Class  Coin
+  def __init__(self, posx=0, posy=0, width, height, color):
+    self.x = P1posx
+    self.y = P1posy
+    self.width = P1width
+    self.height = P1height
+    self.color = color
+
+  def collide()
+    if P1posx >= posx or P1posx <= posx or P1posy >= posy or P1posy <= posy:
+      points += 1
